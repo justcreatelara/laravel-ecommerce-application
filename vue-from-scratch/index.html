@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>vue from scratch</title>
+		</head>
+		<body>
+			
+			<div id="app">
+                <h1>{{ title }}</h1>
+                <p v-text="content"></p>
+			</div>
+            
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+			<script>
+				new Vue({
+					el: '#app',
+					
+					data: {
+						title: 'my title',
+                        content: 'here is my content'
+					}
+				});
+			</script>
+			
+			
+		</body>
+		</html>
